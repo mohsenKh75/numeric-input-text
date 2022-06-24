@@ -1,0 +1,10 @@
+  const [info, setInfo] = useState({ name: "", tel: "", pass: "" });
+
+  function changeHandler(e) {
+    let numbers = /^[0-9]+$/;
+    if (e.target.value.match(numbers)) {
+      setInfo({ ...info, tel: e.target.value.trim() });https://github.com/mohsenKh75/numeric-input-text
+    } else {
+      setInfo({ ...info, tel: "" });https://github.com/mohsenKh75/numeric-input-text
+    }
+  }
